@@ -18,12 +18,12 @@ const Home = () => {
         loop
         muted
       >
-        <source src="/primary/homeBG3d.mp4" type="video/mp4" />
+        <source src="/home/homeBG3d.mp4" type="video/mp4" />
       </video>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white ">
-        <img className="h-36 mb-4" src="/primary/Tedxvjit.png" alt="TEDxVJIT" />
+        <img className="h-36 " src="/home/Tedxvjit.png" alt="TEDxVJIT" />
         <a
           href="https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e"
           target="_blank"
@@ -37,7 +37,7 @@ const Home = () => {
         {/* Left Div - Image */}
         <div className="flex-shrink-0 w-full md:w-1/2 flex items-center justify-center">
           <img
-            src="/primary/Power_of_Persistence.png" // Replace with your image URL
+            src="/home/Power_of_Persistence.png" // Replace with your image URL
             alt="Placeholder"
             className="max-h-full max-w-full object-cover"
           />
@@ -75,7 +75,7 @@ const Home = () => {
                 <p className="text-3xl md:text-4xl mt-4 md:mt-0">What is</p>
                 <img
                   className="ml-0 md:ml-4 mt-4 md:mt-0 w-[50px] sm:w-[10px] md:w-[150px] h-auto "
-                  src="/primary/TEDxVJIT_Navbar_About.png"
+                  src="/home/TEDxVJIT_Navbar_About.png"
                   alt="TEDx VJIT"
                 />
               </div>
@@ -116,7 +116,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="speakers reveal">
+      <section className="relative speakers reveal">
         <div className="container">
           <div
             className="speakers-heading mt-10"
@@ -127,16 +127,16 @@ const Home = () => {
           <div className="containers">
             <div className="slider-container">
               {[
-                "/Resources/media/1.jpg",
-                "/Resources/media/2.jpg",
-                "/Resources/media/3.jpg",
-                "/Resources/media/4.jpg",
-                "/Resources/media/5.jpg",
-                "/Resources/media/6.jpg",
-                "/Resources/media/7.jpg",
-                "/Resources/media/8.jpg",
-                "/Resources/media/9.jpg",
-                "/Resources/media/10.jpg",
+                "/home/1.jpg",
+                "/home/2.jpg",
+                "/home/3.jpg",
+                "/home/4.jpg",
+                "/home/5.jpg",
+                "/home/6.jpg",
+                "/home/7.jpg",
+                "/home/8.jpg",
+                "/home/9.jpg",
+                "/home/10.jpg",
               ].map((imageSrc, index) => (
                 <div
                   className="single-team"
@@ -160,7 +160,7 @@ const Home = () => {
       </section>
 
       {/* Map and Registration Section */}
-      <section className="map-registration reveal" id="maps">
+      <section className="relative map-registration reveal" id="maps">
         <div className="container mx-auto text-center">
           <div className="flex flex-wrap justify-center">
             {/* Buttons Section */}

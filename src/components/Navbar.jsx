@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import tedxvjitlogo from '../images/TEDxVJIT_Navbar_About.png';
+import { HiMenu } from 'react-icons/hi'; // For the hamburger icon
+import { MdClose } from 'react-icons/md'; // For the close icon
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,12 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-md z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-md z-50" >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-around h-16">
           {/* Logo */}
           <div className="flex items-center">
-           <a href="/"> <img className="h-10 w-auto" src="/primary/Tedxvjit.png" alt="TEDxVJIT" /></a>
+           <a href="/"> <img className="h-10 w-auto" src="/home/Tedxvjit.png" alt="TEDxVJIT" /></a>
           </div>
 
           {/* Desktop Navigation Links */}
@@ -71,27 +72,9 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {menuOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <MdClose className="h-6 w-6" />  // Replacing SVG with react-icons
               ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+                <HiMenu className="h-6 w-6" />   // Replacing SVG with react-icons
               )}
             </button>
           </div>

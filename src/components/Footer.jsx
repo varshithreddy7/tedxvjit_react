@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left Section - Logo and Links */}
         <div className="flex flex-col items-start md:w-1/3 mb-5 md:mb-0">
           <img
-            src="/primary/Tedxvjit.png"
+            src="/home/Tedxvjit.png"
             alt="TEDxVJIT Logo"
             className="max-w-[150px] mb-2"
           />
@@ -53,16 +53,20 @@ const Footer = () => {
         <div className="flex flex-col items-start md:w-1/3">
           <h3 className="text-xl mb-2">Contact Us</h3>
           <p className="flex items-center text-gray-400 hover:text-red-600 mb-2">
-            <i className="fas fa-envelope mr-2"></i> tedxvjit@vjit.ac.in
+            <i className="fas fa-envelope mr-2"></i>
+            <a href="mailto:tedx@vjit.ac.in">tedx@vjit.ac.in</a>
           </p>
           <p className="flex items-center text-gray-400 hover:text-red-600 mb-2">
-            <i className="fas fa-phone mr-2"></i> +91 9866487922
+            <i className="fas fa-phone mr-2"></i>
+            <a href="tel:+91 9866487922">+91 9866487922</a> 
           </p>
           <p className="flex items-center text-gray-400 hover:text-red-600 mb-2">
-            <i className="fas fa-phone mr-2"></i> +91 8121403233
+            <i className="fas fa-phone mr-2"></i>
+            <a href="tel:+91 8121403233">+91 8121403233</a> 
           </p>
           <p className="flex items-center text-gray-400 hover:text-red-600">
-            <i className="fas fa-phone mr-2"></i> +91 8106993270
+            <i className="fas fa-phone mr-2"></i>
+            <a href="tel:+91 8106993270">+91 8106993270</a> 
           </p>
         </div>
       </div>

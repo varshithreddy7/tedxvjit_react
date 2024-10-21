@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Speaker_Mobile from './Speaker_Mobile';
 import Speaker_Desktop from './Speaker_Desktop';
 
-const App = () => {
+const Speakers_Main = () => {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -30,4 +30,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Speakers_Main;

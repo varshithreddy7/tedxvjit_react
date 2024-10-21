@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './teams.css'
+// import './teams.css'
 
 const coreTeam = [
   { name: "Dr.E Saibaba Reddy", designation: "Principal", img: "/teams/core/saibaba.jpg" },
@@ -15,7 +15,7 @@ const coreTeam = [
 
 const organizingTeam = [
   { name: "Keerthana", designation: "Licensee | Organiser", img: "/teams/organizing/Keerthana.jpg" },
-  { name: "Akash Mallareddy", designation: "Co-Organiser", img: "/teams/organizing/akash.png" },
+  { name: "Akash MallaReddy", designation: "Co-Organiser", img: "/teams/organizing/akash.png" },
   { name: "Dr. Ramesh Cheripelli", designation: "Faculty Coordinator", img: "/teams/organizing/ramesh.jpg" },
 ];
 
@@ -124,7 +124,7 @@ const Card = ({ img, name, designation }) => (
   </div>
 );
 
-const TeamPage = () => {
+const Teams = () => {
   const [fadeInFirstSection, setFadeInFirstSection] = useState(false);
   const [fadeInSections, setFadeInSections] = useState({
     coreTeam: false,
@@ -187,26 +187,29 @@ const TeamPage = () => {
 
 
   return (
-    <div className="min-h-screen text-white relative flex flex-col items-center">
-      <video
-        autoPlay
-        loop
-        muted
-        className="video-background"
-        src="/teams/team-backgrount-3d.mp4"
-      ></video>
+    <div className="min-h-screen text-white relative flex flex-col p-0 items-center mt-24">
+  {/* Video Background */}
+  <video
+    autoPlay
+    loop
+    muted
+    className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+    src="/teams/team-backgrount-3d.mp4"
+  ></video>
 
-      <section className={`flex flex-col items-center justify-center px-4 text-center custom-height bg-gradient-to-b from-transparent to-black/80 w-screen ${fadeInFirstSection ? 'fade-in' : 'hidden'}`}>
+  {/* Section with Team Information */}
+  <section className={`flex flex-col items-center justify-center px-4 text-center w-screen bg-gradient-to-b from-transparent to-black/80 ${fadeInFirstSection ? 'opacity-100 animate-fadeIn' : 'hidden'} custom-height`}>
+    <div className="team-title">
+      <h1 className="text-4xl font-bold mb-4">The Team</h1>
+    </div>
+    <div className="team-paragraph">
+      <p className="text-center max-w-2xl px-4 mt-2">
+        The TEDxVJIT team is a dynamic collective of visionaries, thinkers, and doers committed to igniting curiosity and inspiring action. United by a shared passion for ideas worth spreading, we meticulously curate transformative experiences that challenge the status quo and empower our community. Our diverse team, composed of innovative students and dedicated faculty, collaborates tirelessly to bring together thought leaders from various fields, ensuring each event is a beacon of knowledge, creativity, and persistence. At TEDxVJIT, we believe in the power of persistence to shape a brighter future, one idea at a time.
+      </p>
+    </div>
+  </section>
 
-        <div className='team-title'>
-          <h1 className="text-4xl font-bold mb-4">The Team</h1>
-        </div>
-        <div className="team-paragraph">
-          <p className="text-center max-w-2xl px-4 mt-2">
-            The TEDxVJIT team is a dynamic collective of visionaries, thinkers, and doers committed to igniting curiosity and inspiring action. United by a shared passion for ideas worth spreading, we meticulously curate transformative experiences that challenge the status quo and empower our community. Our diverse team, composed of innovative students and dedicated faculty, collaborates tirelessly to bring together thought leaders from various fields, ensuring each event is a beacon of knowledge, creativity, and persistence. At TEDxVJIT, we believe in the power of persistence to shape a brighter future, one idea at a time.
-          </p>
-        </div>
-      </section>
+
       <div className='bg-black/80 w-screen'>
         <div className="tedx-teams">
           <h2 className="text-4xl mt-[7rem] font-bold mb-8 text-center">Core Team</h2>
@@ -327,4 +330,4 @@ const TeamPage = () => {
   );
 };
 
-export default TeamPage;
+export default Teams;

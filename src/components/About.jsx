@@ -11,7 +11,7 @@ const About = () => {
         loop
         className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" // Ensures the video stays fixed and in the background
       >
-        <source src="/aboutus/about_us.mp4" type="video/mp4" />
+        <source src="/about/about_us.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
               <div className="md:order-2 md:w-1/2 border-2 border-red-500 inline-block mr-3 mt-5 mb-10">
-                <img className="img-fluid w-full mx-auto" src="/Resources/media/Tedx1.jpg" alt="Theme" />
+                <img className="img-fluid w-full mx-auto" src="/about/Tedx1.jpg" alt="Theme" />
               </div>
             </div>
 
@@ -56,7 +56,7 @@ const About = () => {
                 </p>
               </div>
               <div className="md:order-1 md:w-1/2 border-2 border-red-500 inline-block mr-3 mt-5 mb-10">
-                <img className="img-fluid w-full mx-auto" src='./Resources/media/Tedx2.png' alt="Motto" />
+                <img className="img-fluid w-full mx-auto" src='/about/Tedx2.png' alt="Motto" />
               </div>
             </div>
 
@@ -74,7 +74,7 @@ const About = () => {
                 </p>
               </div>
               <div className="md:order-2 md:w-1/2 border-2 border-red-600  inline-block mr-3 mt-5 mb-10">
-                <img className="img-fluid w-full mx-auto " src="/Resources/media/e block.JPG" alt="Vision" />
+                <img className="img-fluid w-full mx-auto " src="/about/e block.JPG" alt="Vision" />
               </div>
             </div>
 
