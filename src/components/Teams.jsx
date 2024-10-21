@@ -71,8 +71,8 @@ const communicationsAndContent = [
   { name: "Tulsy", designation: "Member", img: "/teams/Communication/Tulsy.jpg" },
   { name: "Rishika Devi", designation: "Member", img: "/teams/Communication/Rishika.jpg" },
   { name: "Veda Sri", designation: "Member", img: "/teams/Communication/vedasri.jpg" },
-  { name: "Neeraj", designation: "Member", img: "/teams/Communication/neeraj.jpg" },
-  { name: "Sathvik", designation: "Member", img: "/teams/Communication/Sathwik.jpg" },
+  { name: "Neeraj", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/neeraj.jpg?updatedAt=1729520961380" },
+  { name: "Sathwik", designation: "Member", img: "/teams/Communication/Sathwik.jpg" },
 ];
 
 const ExperienceTeam = [
