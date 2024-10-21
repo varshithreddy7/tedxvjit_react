@@ -25,8 +25,7 @@ const Home = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white ">
         <img className="h-36 " src="/home/Tedxvjit.png" alt="TEDxVJIT" />
         <a
-          href="javascript:void( window.open( 'https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"
-          target="_blank"
+          href="https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e" target='_blank'
           className="block rounded-md bg-red-500 px-3 py-2 text-base font-normal text-white hover:bg-red-700 hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
         >
           Get Tickets
