@@ -8,7 +8,7 @@ const speakers = [
   {
     id: 1,
     name: "JD Laxmi Narayana",
-    image: "/speakers/jd_laxmi_narayana.png",
+    image: "https://ik.imagekit.io/tedxvjit/jd_laxmi_narayana.png?updatedAt=1729522476527",
     linkedin: 0,
     instagram:"https://www.instagram.com/jdlakshminarayana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     twitter: "https://x.com/VVL_Official?t=3S_xt5j8dePVlVmVsf_2wA&s=08 ",
@@ -19,7 +19,7 @@ const speakers = [
   {
     id: 2,
     name: "Vanitha Datla",
-    image: "/speakers/vanitha_datla.png",
+    image: "https://ik.imagekit.io/tedxvjit/vanitha_datla.png?updatedAt=1729522492566",
     linkedin: "https://www.linkedin.com/in/vanithadatla/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BantXG80GSYyhoQ%2BRvXbfPg%3D%3D ",
     twitter: "https://twitter.com/vanitha_datla",
     description: "Vanitha Datla is a highly accomplished professional with nearly three decades of experience in diverse sectors, including financial services, insurance, cement, power, security printing, instrumentation, BPO services, and healthcare in the USA and India. She serves as the Vice Chairperson of Elico and the Managing Director of Elico Healthcare Services Ltd, a Hyderabad-based company. She is a Chartered Financial Analyst and is pursuing a doctoral program at ISB on the Role of Women in Family Businesses. A strong advocate for diversity and women's empowerment, Vanitha has worked to improve women's corporate representation through policy development and mentoring. She also serves as treasurer of Women in Network, mentoring children from urban slums to enhance their education and quality of life.",
@@ -29,7 +29,7 @@ const speakers = [
   {     
     id: 3,     
     name: "Dasaraj Centhimil Tarun",     
-    image: "/speakers/dasaraj_centhamli_tarun.png",     
+    image: "https://ik.imagekit.io/tedxvjit/dasaraj_centhamli_tarun.png?updatedAt=1729522476228",     
     linkedin:0,     
     instagram: "https://www.instagram.com/dctarun/?utm_source=ig_web_button_share_sheet",    
      twitter: "https://twitter.com/vanitha_datla",     
