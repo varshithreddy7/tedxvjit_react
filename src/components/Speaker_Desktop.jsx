@@ -28,7 +28,7 @@ const speakers = [
   },
   {     
     id: 3,     
-    name: "Dasarj Centhimul Tarun",     
+    name: "Dasaraj Centhimil Tarun",     
     image: "/speakers/dasaraj_centhamli_tarun.png",     
     linkedin:0,     
     instagram: "https://www.instagram.com/dctarun/?utm_source=ig_web_button_share_sheet",    

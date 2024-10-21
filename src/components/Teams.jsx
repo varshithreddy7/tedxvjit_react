@@ -288,7 +288,7 @@ const Teams = () => {
         </section>
 
         <div className="tedx-teams">
-          <h2 className="text-4xl font-bold mb-8 text-center">Communications and Content</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Content and Curation</h2>
         </div>
         <section id="communications-section" className={`min-h-screen px-4 py-16 ${fadeInSections.communications ? 'fade-in' : 'scroll-fade'}`}>
 
