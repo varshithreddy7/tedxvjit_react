@@ -21,13 +21,13 @@ const organizingTeam = [
 
 // New Web Development Team data
 const webDevelopmentTeam = [
-  { name: "Vijay Anand", designation: "Lead", img: "/teams/Web dev/vijayy.png" },
-  { name: "Vijay Guttula", designation: "Member", img: "/teams/Web dev/vijay.jpg" },
-  { name: "Vikhyath Gupta", designation: "Member", img: "/teams/Web dev/Vikhyath.jpg" },
+  { name: "S Vijayanand", designation: "Lead", img: "/teams/Web dev/vijayy.png" },
   { name: "Varshith Reddy", designation: "Member", img: "/teams/Web dev/varshith.jpg" },
-  { name: "Nitesh Agarwal", designation: "Member", img: "/teams/Web dev/nitesh.jpg" },
   { name: "Shiva Sai kumar", designation: "Member", img: "/teams/Web dev/shiva.jpg" },
+  { name: "Vijay Guttula", designation: "Member", img: "/teams/Web dev/vijay.jpg" },
+  { name: "Nitesh Agarwal", designation: "Member", img: "/teams/Web dev/nitesh.jpg" },
   { name: "Hussain Basha", designation: "Member", img: "/teams/Web dev/basha.jpg" },
+  { name: "Vikhyath Gupta", designation: "Member", img: "/teams/Web dev/Vikhyath.jpg" },
 ];
 
 // New Marketing Team data
@@ -78,9 +78,9 @@ const communicationsAndContent = [
 const ExperienceTeam = [
   { name: "Harshith Pilli", designation: "Lead", img: "/teams/Hospitality/harshith.jpg" },
   { name: "Venkat Vatsal", designation: "Member", img: "/teams/Hospitality/Venkat.jpg" },
+    { name: "Rohan", designation: "Member", img: "/teams/Hospitality/Rohan.jpg" },
   { name: "Sri Ram", designation: "Member", img: "/teams/Hospitality/sriram.jpg" },
   { name: "Gokul Pilligundla", designation: "Member", img: "/teams/Hospitality/Gokul.jpg" },
-  { name: "Rohan", designation: "Member", img: "/teams/Hospitality/Rohan.jpg" },
   { name: "Varuni", designation: "Member", img: "/teams/Hospitality/Varuni.jpg" },
   { name: "Shreya", designation: "Member", img: "/teams/Hospitality/Shreya.jpg" },
   { name: "Sunaina", designation: "Member", img: "/teams/Hospitality/Sunayana.jpg" },
