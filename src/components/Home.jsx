@@ -115,7 +115,49 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <section className="relative speakers reveal">
+        <div className="container">
+          <div
+            className="speakers-heading mt-10"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <h1 className="mt-5">SPONSORS</h1>
+          </div>
+          <div className="containers">
+            <div className="slider-container">
+              {[
+                "/sponsors/1.jpg",
+                "/sponsors/2.jpg",
+                "/sponsors/3.jpg",
+                "/sponsors/4.jpg",
+                "/sponsors/1.jpg",
+                "/sponsors/2.jpg",
+                "/sponsors/3.jpg",
+                "/sponsors/4.jpg",
+                "/sponsors/1.jpg",
+                "/sponsors/2.jpg",
+                
+              ].map((imageSrc, index) => (
+                <div
+                  className="single-team"
+                  key={index}
+                  style={{ backgroundColor: "transparent", width: "350px" }}
+                >
+                  <img
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src={imageSrc}
+                    alt={`media-${index}`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="relative speakers reveal">
         <div className="container">
           <div
@@ -154,10 +196,11 @@ const Home = () => {
                   />
                 </div>
               ))}
-            </div>
+            </div> bn
           </div>
         </div>
       </section>
+      
 
       {/* Map and Registration Section */}
       <section className="relative map-registration reveal" id="maps">
