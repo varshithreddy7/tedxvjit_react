@@ -50,7 +50,7 @@ const speakers = [
   },
   {
     id: 12,
-    name: "Kiran Karojia",
+    name: "Kiran Kanojia",
     image: "https://ik.imagekit.io/tedxvjit/public/speakers/kiran_karojia.png?updatedAt=1729522773850",
     linkedin: "https://www.linkedin.com/in/kirankanojia/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9xO6%2FzMZQ460J3uicwz2dg%3D%3D ",
     twitter: "https://twitter.com/vanitha_datla",

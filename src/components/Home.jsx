@@ -77,22 +77,9 @@ const Home = () => {
 
               <div className="text-box text-center md:text-left mt-6">
                 <p className="py-2 text-base md:text-lg font-light text-justify">
-                  We are thrilled to announce VJIT's very own TEDx VJIT
-                  community! TEDx is a program of local, self-organized events
-                  that bring people together to share ideas and inspire action
-                  through powerful talks. Promises to be a day filled with
-                  thought-provoking presentations, inspiring stories, and
-                  engaging discussions.
+                TEDxVJIT is a locally organised TED-like event at Vidya Jyothi Institute of Technology (VJIT) in Hyderabad, aimed at fostering innovative ideas and discussions among students and the wider community. As an independently organised event TEDxVJIT provides a platform for people from diversified backgrounds to share their unique ideas and perspectives on various topics, ranging from technology and engineering to social issues and personal development. It's a space where ideas are celebrated, connections are made, and the spirit and the essence of TED is brought to life.
                 </p>
-                <p className="py-2 text-base md:text-lg font-light text-justify">
-                  Whether you're a budding entrepreneur, a passionate artist, or
-                  simply someone with a unique perspective to share, we
-                  encourage you to be a part of TEDx VJIT. This is your chance
-                  to be part of a movement that's sparking innovation and change
-                  around the world. Stay tuned for more information about
-                  speaker announcements, registration details, and exciting
-                  activities planned for the event!
-                </p>
+                
                 <h3 className="wevjit text-red-600 text-3xl mt-6 text-left">
                   We The VJIT . . .
                 </h3>
