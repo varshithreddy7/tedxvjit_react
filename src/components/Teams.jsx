@@ -2,104 +2,106 @@ import React, { useEffect, useState } from 'react';
 // import './teams.css'
 
 const coreTeam = [
-  { name: "Dr.E Saibaba Reddy", designation: "Principal", img: "/teams/core/saibaba.jpg" },
-  { name: "Dr. A Padmaja", designation: "Dean", img: "/teams/core/padmaja.jpg" },
-  { name: "Mrs. G Srilatha", designation: "Academic Coordinator", img: "/teams/core/srilatha.jpg" },
-  { name: "Mr. R V Chalam", designation: "Sr Adminstrative Officer", img: "/teams/core/chalam.jpg" },
-  { name: "Dr. G Sreeram Reddy", designation: "HOD-ME", img: "/teams/core/sreeramreddy.jpg" },
-  { name: "Dr. A Srujana", designation: "HOD-EEE", img: "/teams/core/srujana.jpg" },
-  { name: "Mr. B Srinivasulu", designation: "HOD-IT", img: "/teams/core/srinivas.jpg" },
-  { name: "Dr.M Rajendra Prasad", designation: "HOD-ECE", img: "/teams/core/rajendraprasad.jpg" },
-  { name: "Dr. Pallavi Badry", designation: "HOD-CE", img: "/teams/core/pallavibadry.jpg" },
+  { name: "Dr.E Saibaba Reddy", designation: "Principal", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/saibaba.jpg?updatedAt=1729522758652" },
+  { name: "Dr. A Padmaja", designation: "Dean", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/WhatsApp%20Image%202024-10-21%20at%2017.24.34_ff68359b.jpg?updatedAt=1729534845207" },
+  { name: "Mrs. G Srilatha", designation: "Academic Coordinator", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srilatha.jpg?updatedAt=1729522759229" },
+  { name: "Mr. R V Chalam", designation: "Sr Adminstrative Officer", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/chalam.jpg?updatedAt=1729522756976" },
+  { name: "Dr. G Sreeram Reddy", designation: "HOD-ME", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/sreeramreddy.jpg?updatedAt=1729522759243" },
+  { name: "Dr. A Srujana", designation: "HOD-EEE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srujana.jpg?updatedAt=1729522759124" },
+  { name: "Mr. B Srinivasulu", designation: "HOD-IT", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srinivas.jpg?updatedAt=1729522758877" },
+  { name: "Dr.M Rajendra Prasad", designation: "HOD-ECE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/rajendraprasad.jpg?updatedAt=1729522758544" },
+  { name: "Dr. Pallavi Badry", designation: "HOD-CE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/pallavibadry.jpg?updatedAt=1729522757322" },
 ];
 
 const organizingTeam = [
-  { name: "Keerthana", designation: "Licensee | Organiser", img: "/teams/organizing/Keerthana.jpg" },
-  { name: "Akash MallaReddy", designation: "Co-Organiser", img: "/teams/organizing/akash.png" },
-  { name: "Dr. Ramesh Cheripelli", designation: "Faculty Coordinator", img: "/teams/organizing/ramesh.jpg" },
+  { name: "Keerthana", designation: "Licensee | Organiser", img: "https://ik.imagekit.io/tedxvjit/public/teams/organizing/Keerthana.jpg?updatedAt=1729522747620" },
+  { name: "Akash MallaReddy", designation: "Co-Organiser", img: "https://ik.imagekit.io/tedxvjit/public/teams/organizing/akash.png?updatedAt=1729522747039" },
+  { name: "Dr. Ramesh Cheripelli", designation: "Faculty Coordinator", img: "https://ik.imagekit.io/tedxvjit/public/teams/organizing/ramesh.jpg?updatedAt=1729522748720" },
 ];
 
 // New Web Development Team data
 const webDevelopmentTeam = [
-  { name: "S Vijayanand", designation: "Lead", img: "/teams/Web dev/vijayy.png" },
-  { name: "Varshith Reddy", designation: "Member", img: "/teams/Web dev/varshith.jpg" },
-  { name: "Shiva Sai kumar", designation: "Member", img: "/teams/Web dev/shiva.jpg" },
-  { name: "Vijay Guttula", designation: "Member", img: "/teams/Web dev/vijay.jpg" },
-  { name: "Nitesh Agarwal", designation: "Member", img: "/teams/Web dev/nitesh.jpg" },
-  { name: "Hussain Basha", designation: "Member", img: "/teams/Web dev/basha.jpg" },
-  { name: "Vikhyath Gupta", designation: "Member", img: "/teams/Web dev/Vikhyath.jpg" },
+  { name: "S Vijayanand", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/IMG_5691.png?updatedAt=1729535555604" },
+  { name: "Varshith Reddy", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/varshith.jpg?updatedAt=1729522733480" },
+  { name: "Shiva Sai kumar", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/shiva.jpg?updatedAt=1729522733280" },
+  { name: "Vijay Guttula", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/vijay.jpg?updatedAt=1729522733412" },
+  { name: "Nitesh Agarwal", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/nitesh.jpg?updatedAt=1729522733420" },
+  { name: "Hussain Basha", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/basha.jpg?updatedAt=1729522733263" },
+  { name: "Vikhyath Gupta", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Web%20dev/Vikhyath.jpg?updatedAt=1729522740594" },
 ];
 
 // New Marketing Team data
 const marketingTeam = [
-  { name: "Bharath Kumar Agnur", designation: "Lead", img: "/teams/Marketing/bharat.jpg" },
-  { name: "Anirudh Singh", designation: "Member", img: "/teams/Marketing/Anirudh.jpg" },
-  { name: "Shiva Sharan", designation: "Member", img: "/teams/Marketing/Shiva.png" },
-  { name: "Akshith", designation: "Member", img: "/teams/Marketing/Akshith.jpg" },
-  { name: "Amitouja Bose Tagore", designation: "Member", img: "/teams/Marketing/Amitouja.jpg" },
-  { name: "Sindhu", designation: "Member", img: "/teams/Marketing/Sindhu.jpg" },
-  { name: "Soumya", designation: "Member", img: "/teams/Marketing/Sowmya.jpg" },
+  { name: "Bharath Kumar Agnur", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/bharat.jpg?updatedAt=1729522750955" },
+  { name: "Anirudh Singh", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Anirudh.jpg?updatedAt=1729522749679" },
+  { name: "Shiva Sharan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Shiva.png?updatedAt=1729522750744" },
+  { name: "Akshith", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Akshith.jpg?updatedAt=1729522749884" },
+  { name: "Amitouja Bose Tagore", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Amitouja.jpg?updatedAt=1729522749800" },
+  { name: "Sindhu", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Sindhu.jpg?updatedAt=1729522751368" },
+  { name: "Soumya", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Marketing/Sowmya.jpg?updatedAt=1729522751765" },
 ];
 
 const designTeam = [
-  { name: "Sai Teja Naraboina", designation: "Lead", img: "/teams/Design/Teja.jpg" },
-  { name: "Tanvi Deshmukh", designation: "Member", img: "/teams/Design/tanvi.jpg" },
-  { name: "Bandi Bhagavathi", designation: "Member", img: "/teams/Design/Bandi.jpg" },
-  { name: "Yashasvi", designation: "Member", img: "/teams/Design/Yashasvi.jpg" },
-  { name: "Himabala", designation: "Member", img: "/teams/Design/HimaBala.jpg" },
-  { name: "Sujay", designation: "Member", img: "/teams/Design/Sujay.png" },
+  { name: "Sai Teja Naraboina", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Teja.jpg?updatedAt=1729522756289" },
+  { name: "Tanvi Deshmukh", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/tanvi.jpg?updatedAt=1729522756293" },
+  { name: "Bandi Bhagavathi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Bandi.jpg?updatedAt=1729522756203" },
+  { name: "Yashasvi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Yashasvi.jpg?updatedAt=1729522756554" },
+  { name: "Himabala", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/HimaBala.jpg?updatedAt=1729522756069" },
+  { name: "Sujay", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Sujay.png?updatedAt=1729522756255" },
   // { name: "Ananditha", designation: "Member", img: "/teams/Design/.jpg" },
   // { name: "Sana", designation: "Member", img: "/path/to/image33.jpg" },
   // { name: "Swetha", designation: "Member", img: "/path/to/image34.jpg" },
 ];
 
 const partnershipsAndCollaborations = [
-  { name: "Ansh Kamlekar", designation: "Lead", img: "/teams/Partnerships/ansh.jpg" },
-  { name: "Stephanie", designation: "Member", img: "/teams/Partnerships/Stephanie.jpg" },
-  { name: "Apeksha", designation: "Member", img: "/teams/Partnerships/Apeksha.jpg" },
-  { name: "Siri", designation: "Member", img: "/teams/Partnerships/Siri.jpg" },
-  { name: "Gowthami", designation: "Member", img: "/teams/Partnerships/Gowthami.jpg" },
-  { name: "Hima Varshini", designation: "Member", img: "/teams/Partnerships/Himavarshini.jpg" },
-  { name: "Parth Asawa", designation: "Member", img: "/teams/Partnerships/Parth.jpg" },
-  { name: "Syed Asif", designation: "Member", img: "/teams/Partnerships/Asif.jpg" },
+  { name: "Ansh Kamlekar", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/ansh.jpg?updatedAt=1729522743665" },
+  { name: "Stephanie", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Stephanie.jpg?updatedAt=1729522746876" },
+  { name: "Parth Asawa", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Parth.jpg?updatedAt=1729522746670" },
+  { name: "Apeksha", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Apeksha.jpg?updatedAt=1729522744129" },
+  { name: "Siri", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Siri.jpg?updatedAt=1729522746714" },
+  { name: "Gowthami", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Gowthami.jpg?updatedAt=1729522744582" },
+  { name: "Hima Varshini", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Himavarshini.jpg?updatedAt=1729522745511" },
+  { name: "Syed Asif", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Partnerships/Asif.jpg?updatedAt=1729522744324" },
 ];
 
 const communicationsAndContent = [
-  { name: "Akshaya Reddy Konatham", designation: "Lead", img: "/teams/Communication/akshaya.jpg" },
-  { name: "Amena Yasmeen", designation: "Member", img: "/teams/Communication/amena.jpeg" },
-  { name: "Bhavagnya", designation: "Member", img: "/teams/Communication/Bhavagnya.jpg" },
-  { name: "Tulsy", designation: "Member", img: "/teams/Communication/Tulsy.jpg" },
-  { name: "Rishika Devi", designation: "Member", img: "/teams/Communication/Rishika.jpg" },
-  { name: "Veda Sri", designation: "Member", img: "/teams/Communication/vedasri.jpg" },
+  { name: "Akshaya Reddy Konatham", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/akshaya.jpg?updatedAt=1729522759338" },
+  { name: "Amena Yasmeen", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/amena.jpeg?updatedAt=1729522759692" },
+  { name: "Bhavagnya", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Bhavagnya.jpg?updatedAt=1729522760405" },
+  { name: "Ashwin", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Ashwin.jpg?updatedAt=1729522762020" },
+  { name: "Tulsy", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Tulsy.jpg?updatedAt=1729522761984" },
+  { name: "Rishika Devi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Rishika.jpg?updatedAt=1729522761582" },
+  { name: "Veda Sri", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/vedasri.jpg?updatedAt=1729522761859" },
   { name: "Neeraj", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/neeraj.jpg?updatedAt=1729520961380" },
-  { name: "Sathwik", designation: "Member", img: "/teams/Communication/Sathwik.jpg" },
+  { name: "Sathwik", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Sathwik.jpg?updatedAt=1729522761782" },
 ];
 
 const ExperienceTeam = [
-  { name: "Harshith Pilli", designation: "Lead", img: "/teams/Hospitality/harshith.jpg" },
-  { name: "Venkat Vatsal", designation: "Member", img: "/teams/Hospitality/Venkat.jpg" },
-    { name: "Rohan", designation: "Member", img: "/teams/Hospitality/Rohan.jpg" },
-  { name: "Sri Ram", designation: "Member", img: "/teams/Hospitality/sriram.jpg" },
-  { name: "Gokul Pilligundla", designation: "Member", img: "/teams/Hospitality/Gokul.jpg" },
-  { name: "Varuni", designation: "Member", img: "/teams/Hospitality/Varuni.jpg" },
-  { name: "Shreya", designation: "Member", img: "/teams/Hospitality/Shreya.jpg" },
-  { name: "Sunaina", designation: "Member", img: "/teams/Hospitality/Sunayana.jpg" },
-  { name: "Siri Shetty", designation: "Member", img: "/teams/Hospitality/SiriSetty.jpg" },
+  { name: "Harshith Pilli", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/harshith.jpg?updatedAt=1729522753013" },
+  { name: "Venkat Vatsal", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Venkat.jpg?updatedAt=1729522755136" },
+    { name: "Rohan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Rohan.jpg?updatedAt=1729522752992" },
+  { name: "Sri Ram", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/sriram.jpg?updatedAt=1729522753985" },
+  { name: "Gokul Pilligundla", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Gokul.jpg?updatedAt=1729522753110" },
+  { name: "Varuni", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Varuni.jpg?updatedAt=1729522754613" },
+  { name: "Shreya", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Shreya.jpg?updatedAt=1729522753372" },
+  { name: "Sunaina", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/Sunayana.jpg?updatedAt=1729522754632" },
+  { name: "Siri Shetty", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Hospitality/SiriSetty.jpg?updatedAt=1729522753620/teams/Hospitality/SiriSetty.jpg" },
 ];
 
 const productionsTeam = [
-  { name: "Prasad Posimisetti", designation: "Lead", img: "/teams/Production/Prasad.jpg" },
-  { name: "Dinesh", designation: "Member", img: "/teams/Production/Dinesh.jpg" },
-  { name: "Varuni", designation: "Member", img: "/teams/Production/Varuni Kodam.jpg" },
-  { name: "Hema Siri", designation: "Member", img: "/teams/Production/Hema Siri.jpg" },
-  { name: "Anjali", designation: "Member", img: "/teams/Production/Anjali.png" },
-  { name: "Guna", designation: "Member", img: "/teams/Production/Guna.jpg" },
-  { name: "Shraayan", designation: "Member", img: "/teams/Production/sharyann.jpg" },
- { name: "Madhav", designation: "Member", img: "/teams/Production/madav.jpg" },
-  { name: "Charan", designation: "Member", img: "/teams/Production/charan.jpg" },
-  { name: "Ashwin", designation: "Member", img: "/teams/Production/Ashwin.jpg" },
-  { name: "Safwan", designation: "Member", img: "/teams/Production/Safwan.jpg" },
-  { name: "Hari Chandan", designation: "Member", img: "/teams/Production/Hari.jpg" },
+  { name: "Prasad Posimisetti", designation: "Lead", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Prasad.jpg?updatedAt=1729522740490" },
+  { name: "Dinesh", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Dinesh.jpg?updatedAt=1729522737846" },
+  { name: "Varuni", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Varuni%20Kodam.jpg?updatedAt=1729522743287" },
+  { name: "Hema Siri", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Hema%20Siri.jpg?updatedAt=1729522738527" },
+  { name: "Sujith", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Sujith.jpg?updatedAt=1729522741753" },
+  { name: "Anjali", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Anjali.png?updatedAt=1729522737257" },
+  { name: "Geeth", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Phanindra.jpg?updatedAt=1729522740277" },
+  { name: "Guna", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Guna.jpg?updatedAt=1729522737857" },
+  { name: "Shraayan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/sharyann.jpg?updatedAt=1729522746822" },
+ { name: "Madhav", designation: "Member", img: "/madav.jpg" },
+  { name: "Charan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/charan.jpg?updatedAt=1729522740386" },
+  { name: "Safwan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Safwan.jpg?updatedAt=1729522740992" },
+  { name: "Hari Chandan", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Production/Hari.jpg?updatedAt=1729522738646" },
 ];
 
 const Card = ({ img, name, designation }) => (
@@ -194,7 +196,7 @@ const Teams = () => {
     loop
     muted
     className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
-    src="/teams/team-backgrount-3d.mp4"
+    src="https://ik.imagekit.io/tedxvjit/public/teams/team-backgrount-3d.mp4?updatedAt=1729522753696"
   ></video>
 
   {/* Section with Team Information */}

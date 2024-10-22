@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left Section - Logo and Links */}
         <div className="flex flex-col items-start md:w-1/3 mb-5 md:mb-0">
           <img
-            src="/home/Tedxvjit.png"
+            src="https://ik.imagekit.io/tedxvjit/public/home/TEDxVJIT_Navbar_About.png?updatedAt=1729522783035"
             alt="TEDxVJIT Logo"
             className="max-w-[150px] mb-2"
           />

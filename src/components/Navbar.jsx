@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex items-center justify-around h-16">
           {/* Logo */}
           <div className="flex items-center">
-           <a href="/"> <img className="h-10 w-auto" src="/home/Tedxvjit.png" alt="TEDxVJIT" /></a>
+           <a href="/"> <img className="h-10 w-auto" src="https://ik.imagekit.io/tedxvjit/public/home/TEDxVJIT_Navbar_About.png?updatedAt=1729522783035" alt="TEDxVJIT" /></a>
           </div>
 
           {/* Desktop Navigation Links */}
@@ -25,6 +25,12 @@ const Navbar = () => {
               className="rounded-md px-3 py-2 text-base md:text-sm lg:text-lg font-normal text-white hover:text-red-500 hover:py-1"
             >
               Home
+            </a>
+            <a
+              href="/about"
+              className="rounded-md px-3 py-2 text-base md:text-sm lg:text-lg font-normal text-white hover:text-red-500 hover:py-1"
+            >
+              About Us
             </a>
             <a
               href="/teams"
@@ -44,12 +50,7 @@ const Navbar = () => {
             >
               Contact Us
             </a>
-            <a
-              href="/about"
-              className="rounded-md px-3 py-2 text-base md:text-sm lg:text-lg font-normal text-white hover:text-red-500 hover:py-1"
-            >
-              About Us
-            </a>
+            
             {/* Get Tickets Button */}
             <div className="hidden sm:block">
               <a
@@ -87,6 +88,10 @@ const Navbar = () => {
           <a href="/" className="block rounded-md px-3 py-2 text-base font-normal text-white hover:text-red-500 hover:py-1">
             Home
           </a>
+
+          <a href="/about" className="block rounded-md px-3 py-2 text-base font-normal text-white hover:text-red-500 hover:py-1">
+            About Us
+          </a>
           <a href="/teams" className="block rounded-md px-3 py-2 text-base font-normal text-white hover:text-red-500 hover:py-1">
             Team
           </a>
@@ -96,9 +101,7 @@ const Navbar = () => {
           <a href="/contact" className="block rounded-md px-3 py-2 text-base font-normal text-white hover:text-red-500 hover:py-1">
             Contact Us
           </a>
-          <a href="/about" className="block rounded-md px-3 py-2 text-base font-normal text-white hover:text-red-500 hover:py-1">
-            About Us
-          </a>
+          
 
           {/* Mobile Contact Button */}
           <a

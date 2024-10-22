@@ -1,10 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../style.css";
 import "../responsive.css";
-// import tedxvjitlogo from "../images/Tedxvjit.png"; // Replace with your logo path
-// import tedxvjit from "../images/TEDxVJIT_Navbar_About.png"; // Replace with your logo path
-// import backgroundVideo from "../images/homeBG3d.mp4"; // Replace with your video path
-// import Power_of_Persistence from "../images/Power_of_Persistence.png"; // Replace with your video path
 
 const Home = () => {
   // carosuell
@@ -23,7 +19,7 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white ">
-        <img className="h-36 " src="/home/Tedxvjit.png" alt="TEDxVJIT" />
+        <img className="h-36 " src="https://ik.imagekit.io/tedxvjit/public/home/Tedxvjit.png?updatedAt=1729522783194" alt="TEDxVJIT" />
         <a
           href="https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e" target='_blank'
           className="block rounded-md bg-red-500 px-3 py-2 text-base font-normal text-white hover:bg-red-700 hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
@@ -36,7 +32,7 @@ const Home = () => {
         {/* Left Div - Image */}
         <div className="flex-shrink-0 w-full md:w-1/2 flex items-center justify-center">
           <img
-            src="/home/Power_of_Persistence.png" // Replace with your image URL
+            src="https://ik.imagekit.io/tedxvjit/public/home/Power_of_Persistence.png?updatedAt=1729522781622" // Replace with your image URL
             alt="Placeholder"
             className="max-h-full max-w-full object-cover"
           />
@@ -74,7 +70,7 @@ const Home = () => {
                 <p className="text-3xl md:text-4xl mt-4 md:mt-0">What is</p>
                 <img
                   className="ml-0 md:ml-4 mt-4 md:mt-0 w-[50px] sm:w-[10px] md:w-[150px] h-auto "
-                  src="/home/TEDxVJIT_Navbar_About.png"
+                  src="https://ik.imagekit.io/tedxvjit/public/home/TEDxVJIT_Navbar_About.png?updatedAt=1729522783035"
                   alt="TEDx VJIT"
                 />
               </div>
@@ -125,16 +121,16 @@ const Home = () => {
           <div className="containers">
             <div className="slider-container">
               {[
-                "/sponsors/1.jpg",
-                "/sponsors/2.jpg",
-                "/sponsors/3.jpg",
-                "/sponsors/4.jpg",
-                "/sponsors/1.jpg",
-                "/sponsors/2.jpg",
-                "/sponsors/3.jpg",
-                "/sponsors/4.jpg",
-                "/sponsors/1.jpg",
-                "/sponsors/2.jpg",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
                 
               ].map((imageSrc, index) => (
                 <div
@@ -168,16 +164,16 @@ const Home = () => {
           <div className="containers">
             <div className="slider-container">
               {[
-                "/home/1.jpg",
-                "/home/2.jpg",
-                "/home/3.jpg",
-                "/home/4.jpg",
-                "/home/5.jpg",
-                "/home/6.jpg",
-                "/home/7.jpg",
-                "/home/8.jpg",
-                "/home/9.jpg",
-                "/home/10.jpg",
+                "https://ik.imagekit.io/tedxvjit/public/home/1.jpg?updatedAt=1729522777166",
+                "https://ik.imagekit.io/tedxvjit/public/home/2.jpg?updatedAt=1729522778173",
+                "https://ik.imagekit.io/tedxvjit/public/home/3.jpg?updatedAt=1729522778128",
+                "https://ik.imagekit.io/tedxvjit/public/home/4.jpg?updatedAt=1729522780281",
+                "https://ik.imagekit.io/tedxvjit/public/home/5.jpg?updatedAt=1729522795032",
+                "https://ik.imagekit.io/tedxvjit/public/home/11.jpg?updatedAt=1729522777465",
+                "https://ik.imagekit.io/tedxvjit/public/home/6.jpg?updatedAt=1729522779997",
+                "https://ik.imagekit.io/tedxvjit/public/home/8.jpg?updatedAt=1729522792513",
+                "https://ik.imagekit.io/tedxvjit/public/home/9.jpg?updatedAt=1729522793085",
+                "https://ik.imagekit.io/tedxvjit/public/home/10.jpg?updatedAt=1729522777519",
               ].map((imageSrc, index) => (
                 <div
                   className="single-team"
@@ -234,7 +230,7 @@ const Home = () => {
                   </button>
                 </a>
               </div>
-              <div className="pt-4">
+              {/* <div className="pt-4">
                 <a
                   href="javascript:void( window.open( 'https://forms.gle/j9xivk5LCN6Qz7Wn6', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"
                   className="hover-btn-change-color"
@@ -246,7 +242,7 @@ const Home = () => {
                     As Speaker
                   </button>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Map Section */}

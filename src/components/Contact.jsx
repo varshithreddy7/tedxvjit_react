@@ -41,7 +41,7 @@ const Contact = () => {
         loop
         className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
       >
-        <source src="/contact/contact_us.mp4" type="video/mp4" />
+        <source src="https://ik.imagekit.io/tedxvjit/public/contact/contact_us.mp4?updatedAt=1729522798283" type="video/mp4" />
       </video>
 
       <div className="flex items-center justify-center h-full">
