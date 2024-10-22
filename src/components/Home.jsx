@@ -14,7 +14,7 @@ const Home = () => {
         loop
         muted
       >
-        <source src="https://ik.imagekit.io/tedxvjit/homeBG3d.mp4?updatedAt=1729522185323" type="video/mp4" />
+        <source src="https://ik.imagekit.io/tedxvjit/public/home/homeBG3d.mp4?updatedAt=1729522791898" type="video/mp4" />
       </video>
 
       {/* Content */}
