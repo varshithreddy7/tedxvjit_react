@@ -46,11 +46,12 @@ const designTeam = [
   { name: "Tanvi Deshmukh", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/tanvi.jpg?updatedAt=1729522756293" },
   { name: "Bandi Bhagavathi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Bandi.jpg?updatedAt=1729522756203" },
   { name: "Yashasvi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Yashasvi.jpg?updatedAt=1729522756554" },
+  { name: "Sai Krishna", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Krishna.JPG?updatedAt=1729563492892" },
   { name: "Himabala", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/HimaBala.jpg?updatedAt=1729522756069" },
   { name: "Sujay", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Sujay.png?updatedAt=1729522756255" },
-  // { name: "Ananditha", designation: "Member", img: "/teams/Design/.jpg" },
-  // { name: "Sana", designation: "Member", img: "/path/to/image33.jpg" },
-  // { name: "Swetha", designation: "Member", img: "/path/to/image34.jpg" },
+  { name: "Ananditha", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/Ananditha.jpg?updatedAt=1729563428254" },
+  { name: "Sana", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/sana.jpg?updatedAt=1729563651366" },
+  { name: "Swetha", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Design/sweta.jpg?updatedAt=1729563490954" },
 ];
 
 const partnershipsAndCollaborations = [
