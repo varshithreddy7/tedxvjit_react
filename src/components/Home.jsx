@@ -113,7 +113,7 @@ const Home = () => {
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/image.png?updatedAt=1729621426674",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/Untitled%20design.jpg?updatedAt=1729621716815",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
