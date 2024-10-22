@@ -73,7 +73,7 @@ const communicationsAndContent = [
   { name: "Tulsy", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Tulsy.jpg?updatedAt=1729522761984" },
   { name: "Rishika Devi", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Rishika.jpg?updatedAt=1729522761582" },
   { name: "Veda Sri", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/vedasri.jpg?updatedAt=1729522761859" },
-  { name: "Neeraj", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/neeraj.jpg?updatedAt=1729520961380" },
+  { name: "Neeraj", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/neeraj.jpg?updatedAt=1729522761679" },
   { name: "Sathwik", designation: "Member", img: "https://ik.imagekit.io/tedxvjit/public/teams/Communication/Sathwik.jpg?updatedAt=1729522761782" },
 ];
 
