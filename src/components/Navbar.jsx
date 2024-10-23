@@ -105,7 +105,7 @@ const Navbar = () => {
 
           {/* Mobile Contact Button */}
           <a
-            href="https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e"target='_blank'
+            href="https://forms.gle/XR1aYp11q7LLoHKu5"target='_blank'
             className="inline w-auto rounded-md bg-red-600 px-3 py-2 text-base font-normal text-white hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
           >
             Get Tickets
