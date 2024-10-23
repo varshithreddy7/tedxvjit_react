@@ -47,7 +47,7 @@ const speakers = [
       image: { hidden: { opacity: 0, scale: 0.7 }, visible: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 0.7 } },
     },
   },
-  https://forms.gle/XR1aYp11q7LLoHKu5
+
   {
     id: 5,
     name: "Naveen Samala",
