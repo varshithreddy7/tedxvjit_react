@@ -111,7 +111,7 @@ const speakers = [
   {
     id: 10,
     name: "Hasvi Muriki",
-    image: "https://ik.imagekit.io/tedxvjit/public/speakers/kiran_karojia.png?updatedAt=1729522773850",
+    image: "https://ik.imagekit.io/tedxvjit/public/speakers/hasvi.png?updatedAt=1729522771831",
     linkedin: "https://www.linkedin.com/in/hasvi-muriki-9088b5225/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BlYcQwuotREWZEQzHJrY%2Bxg%3D%3D",
     twitter: "https://twitter.com/vanitha_datla",
     description: "I am Muriki Pulakita Hasvi, a 16-year-old DexSchool graduate, sports enthusiast, avid cyclist, runner, blogger, MUNer, and TEDx speaker. I have already climbed 3 of the 7 summits and dream of conquering all seven before I turn 19. I hold records as the youngest girl to climb Mt. UT Kangri, Mt. Kang Yatse, and Mt. Dzo Jongo within 70 hours. Additionally, I am the youngest girl to have climbed Mt. Elbrus (the highest mountain in Europe) West and East within 24 hours, as well as Island Peak in Nepal (6,189m). To date, I have completed a total of 12 expeditions. I plan to become a lawyer in the future, as I love reading books and conducting research.",
