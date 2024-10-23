@@ -47,20 +47,7 @@ const speakers = [
       image: { hidden: { opacity: 0, scale: 0.7 }, visible: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 0.7 } },
     },
   },
-  {
-    id: 4,
-    name: "Kiran Kanojia",
-    image: "https://ik.imagekit.io/tedxvjit/public/speakers/kiran_karojia.png?updatedAt=1729522773850",
-    linkedin: "https://www.linkedin.com/in/kirankanojia/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9xO6%2FzMZQ460J3uicwz2dg%3D%3D ",
-    twitter: "https://twitter.com/vanitha_datla",
-    description: "A test engineer by profession and the sole game changer of her life, Kiran Kanojia is the first female blade runner of India, transformed her life after losing a leg in a train accident. From a community where girls' education was discouraged, she broke barriers and refused to let her amputation define her future. Finding strength in the running, Kiran overcame pain and embraced life with resilience and determination. Her story inspires others to focus on their potential rather than limitations, proving that nothing is impossible with self-belief. Join us to hear her inspiring journey of courage and perseverance.",
-    position: "India’s first woman blade runner",
-    pattern: "bg-[linear-gradient(45deg,#d40000_25%,transparent_25%,transparent_50%,#dc2626_50%,#d40000_75%,transparent_75%,transparent)]",
-    animation: {
-      text: { hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -50 } },
-      image: { hidden: { opacity: 0, scale: 0.7 }, visible: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 0.7 } },
-    },
-  },
+  https://forms.gle/XR1aYp11q7LLoHKu5
   {
     id: 5,
     name: "Naveen Samala",
