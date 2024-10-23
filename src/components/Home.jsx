@@ -21,7 +21,7 @@ const Home = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white ">
         <img className="h-36 " src="https://ik.imagekit.io/tedxvjit/public/home/Tedxvjit.png?updatedAt=1729522783194" alt="TEDxVJIT" />
         <a
-          href="https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e" target='_blank'
+          href="https://forms.gle/XR1aYp11q7LLoHKu5" target='_blank'
           className="block rounded-md bg-red-500 px-3 py-2 text-base font-normal text-white hover:bg-red-700 hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
         >
           Get Tickets
@@ -113,7 +113,7 @@ const Home = () => {
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/Untitled%20design%20(1).jpg?updatedAt=1729622050444",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/Untitled%20design%20(2).jpg?updatedAt=1729679774416",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
@@ -194,7 +194,7 @@ const Home = () => {
               <p className="head-1 text-xl font-semibold">Participate Now</p>
               <div className="pt-4">
                 <a
-                  href="javascript:void( window.open( 'https://vpulse.campx.in/vpulse/ums/public/form/66fa6054c2cf83d3a9e6da9e', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"
+                  href="javascript:void( window.open( 'https://forms.gle/XR1aYp11q7LLoHKu5', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"
                   className="hover-btn-change-color"
                 >
                   <button
