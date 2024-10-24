@@ -114,7 +114,7 @@ const Home = () => {
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/Untitled%20design%20(2).jpg?updatedAt=1729679774416",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
+                "https://ik.imagekit.io/tedxvjit/public/sponsors/waltage.com.png?updatedAt=1729753941803",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
                 "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
