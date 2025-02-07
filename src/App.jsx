@@ -9,6 +9,7 @@ import Contact from "./components/Contact.jsx";
 import About from "./components/About.jsx";
 import Speakers_Main from "./components/Speakers_Main.jsx";
 import Teams from "./components/Teams.jsx";
+import Gallery from "./components/Gallery.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/speakers" element={<Speakers_Main />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery/>}/>
         </Routes>
 
         {/* Footer Component */}

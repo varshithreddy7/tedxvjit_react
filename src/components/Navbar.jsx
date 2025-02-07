@@ -45,6 +45,12 @@ const Navbar = () => {
               Speakers
             </a>
             <a
+              href="/gallery"
+              className="rounded-md px-3 py-2 text-base md:text-sm lg:text-lg font-normal text-white hover:text-red-500 hover:py-1"
+            >
+              Gallery
+            </a>
+            <a
               href="/contact"
               className="rounded-md px-3 py-2 text-base md:text-sm lg:text-lg font-normal text-white hover:text-red-500 hover:py-1"
             >
