@@ -103,57 +103,6 @@ const Home = () => {
             className="speakers-heading mt-10"
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <h1 className="mt-5">SPONSORS</h1>
-          </div>
-          <div className="containers">
-            <div className="slider-container">
-              {[
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/1.jpg?updatedAt=1729522761836",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/2.jpg?updatedAt=1729522761979",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/3.jpg?updatedAt=1729522762625",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/4.jpg?updatedAt=1729522763044",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/download.png?updatedAt=1729533922227",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/Untitled%20design%20(2).jpg?updatedAt=1729679774416",
-                "https://ik.imagekit.io/tedxvjit/public/sponsors/waltage.com.png?updatedAt=1729753941803",
-                "./bigfm.jpg",
-                "./bigtv.jpg",
-                "./create.jpg",
-                "./educog.jpg",
-                "./monster.jpg",
-                "./socialpost.jpg",
-                "./tr.jpg",
-                "./tv5.jpg",
-                "./w.jpg"
-                
-                
-                
-              ].map((imageSrc, index) => (
-                <div
-                  className="single-team"
-                  key={index}
-                  style={{ backgroundColor: "transparent", width: "350px" }}
-                >
-                  <img
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                    }}
-                    src={imageSrc}
-                    alt={`media-${index}`}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="relative speakers reveal">
-        <div className="container">
-          <div
-            className="speakers-heading mt-10"
-            style={{ display: "flex", justifyContent: "center" }}
-          >
             <h1 className="mt-5">MEDIA</h1>
           </div>
           <div className="containers">
