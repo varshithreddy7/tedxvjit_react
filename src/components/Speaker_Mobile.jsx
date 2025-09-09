@@ -54,7 +54,7 @@ const speakers = [
     image: "https://ik.imagekit.io/tedxvjit/public/speakers/naveen_samala.png?updatedAt=1729522774666",
     linkedin: "https://www.linkedin.com/in/naveensamala/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BT4wuo2idQOKI7rUPra%2FnIw%3D%3D ",
     twitter: "https://twitter.com/vanitha_datla",
-    description: "Naveen Samala is a remarkable individual whose journey is a powerful testament to perseverance and the relentless pursuit of dreams. Rising from a modest background, he has become a first-generation post-graduate, showcasing his ambition and dedication. Now a Global Portfolio Manager for Business Transformation, Naveen is also an Udemy instructor, author, career coach, CXO resume writer, guest faculty at BITS Pilani, and podcast visionary. His podcast, The Guiding Voice, ranked in the Global Top 2.5%, is the world’s only Quadrilingual podcast, inspiring millions. With expertise in leadership, productivity, and public speaking, his podcast recently won the Asia Podcast Award for Education, further amplifying his impact globally.",
+    description: "Naveen Samala is a remarkable individual whose journey is a powerful testament to perseverance and the relentless pursuit of dreams. Rising from a modest background, he has become a first-generation post-graduate, showcasing his ambition and dedication. Now a Global Portfolio Manager for Business Transformation, Naveen is also an Udemy instructor, author, career coach, CXO resume writer, guest faculty at BITS Pilani, and podcast visionary. His podcast, The Guiding Voice, ranked in the Global Top 2.5%, is the world's only Quadrilingual podcast, inspiring millions. With expertise in leadership, productivity, and public speaking, his podcast recently won the Asia Podcast Award for Education, further amplifying his impact globally.",
     position: "Global Portfolio Management Leader-Diebold, Founder-The Guiding Voice",
     pattern: "bg-[linear-gradient(45deg,#d40000_25%,transparent_25%,transparent_50%,#dc2626_50%,#d40000_75%,transparent_75%,transparent)]",
     animation: {
@@ -138,7 +138,7 @@ const speakers = [
     image: "https://ik.imagekit.io/tedxvjit/public/speakers/kamal.png?updatedAt=1729522775238",
     linkedin: "https://www.linkedin.com/in/kraveentharkamal/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVu4Ve0irR2SJXUdTcw5GyQ%3D%3D",
     twitter: "https://twitter.com/vanitha_datla",
-    description: "Kraveenthar Kamal is the Founder and Director of MAKER GLOBAL, an 8-year-old bootstrapped startup that has become one of India's rapidly growing companies in 3D printing technology. He holds a degree in Mechanical Engineering from the renowned Loyola College, Chennai, and completed an exchange program at ICAM University in Toulouse, France, where he first encountered 3D printing technology. Inspired by a vision to make this technology accessible to the masses in India, he began his entrepreneurial journey at just 21 years old. Through determination and perseverance, he has grown MAKER GLOBAL into Hyderabad’s leading 3D printing company.",
+    description: "Kraveenthar Kamal is the Founder and Director of MAKER GLOBAL, an 8-year-old bootstrapped startup that has become one of India's rapidly growing companies in 3D printing technology. He holds a degree in Mechanical Engineering from the renowned Loyola College, Chennai, and completed an exchange program at ICAM University in Toulouse, France, where he first encountered 3D printing technology. Inspired by a vision to make this technology accessible to the masses in India, he began his entrepreneurial journey at just 21 years old. Through determination and perseverance, he has grown MAKER GLOBAL into Hyderabad's leading 3D printing company.",
     position: "Director & Founder Maker Global",
     pattern: "bg-[linear-gradient(45deg,#d40000_25%,transparent_25%,transparent_50%,#dc2626_50%,#d40000_75%,transparent_75%,transparent)]",
     animation: {
@@ -165,6 +165,49 @@ const speakers = [
   
 ];
 
+// Speaker Registration Section Component
+const SpeakerRegistration = () => {
+  const handleRegisterClick = () => {
+    window.open('https://forms.google.com/speaker-registration', '_blank');
+  };
+
+  return (
+    <div className="h-screen w-full flex items-center justify-center sticky top-0 bg-black">
+      <div className="text-center z-10 px-4">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-red-600 to-red-400 text-transparent bg-clip-text"
+        >
+          Register as a New Speaker
+        </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-base sm:text-lg md:text-xl mb-8 text-gray-300 max-w-xl mx-auto px-2"
+        >
+          Share your ideas worth spreading. Join our inspiring lineup of speakers and make your mark at TEDx VJIT.
+        </motion.p>
+        
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleRegisterClick}
+          className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 text-base sm:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          Register Now
+        </motion.button>
+      </div>
+    </div>
+  );
+};
+
 const Speaker_Mobile = () => {
   const [activeSpeaker, setActiveSpeaker] = useState(0);
 
@@ -172,7 +215,9 @@ const Speaker_Mobile = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const newActiveSpeaker = Math.floor(scrollPosition / windowHeight);
+      // Adjust for the registration section being the first screen
+      const adjustedScrollPosition = Math.max(0, scrollPosition - windowHeight);
+      const newActiveSpeaker = Math.floor(adjustedScrollPosition / windowHeight);
       if (newActiveSpeaker !== activeSpeaker && newActiveSpeaker < speakers.length) {
         setActiveSpeaker(newActiveSpeaker);
       }
@@ -183,7 +228,23 @@ const Speaker_Mobile = () => {
   }, [activeSpeaker]);
 
   return (
-    <div className="relative bg-black mt-20">
+    <div className="relative bg-black">
+      {/* Speaker Registration Section - First Screen */}
+      <SpeakerRegistration />
+      
+      {/* Section Title - Sticky header */}
+      <div className="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm border-b border-red-600/20">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-white font-bold text-2xl sm:text-3xl md:text-4xl text-center py-4 px-4"
+        >
+          Our Distinguished Speakers
+        </motion.h2>
+      </div>
+
+      {/* Speaker Sections */}
       {speakers.map((speaker, index) => (
         <div
           key={speaker.id}
@@ -205,8 +266,8 @@ const Speaker_Mobile = () => {
 <h2 className="
   text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-white md:text-transparent"> {speaker.name}
                </h2>
-               <p className=" text-left text-lg md:text-2xl lg:text-3xl text-white mb-4">
-                 {speaker.posistion}
+               <p className="text-left text-lg md:text-2xl lg:text-3xl text-white mb-4">
+                 {speaker.position}
                </p>
                <p className="text-left text-sm md:text-lg lg:text-xl text-white mb-6">
                  {speaker.description}
@@ -228,7 +289,7 @@ const Speaker_Mobile = () => {
                   href={speaker.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:bg-red-600 transition-colors duration-300"
+                  className="text-white hover:text-pink-600 transition-colors duration-300"
                 >
                   <FaInstagram size={24} />
                 </a>
@@ -267,4 +328,3 @@ const Speaker_Mobile = () => {
 };
 
 export default Speaker_Mobile;
-

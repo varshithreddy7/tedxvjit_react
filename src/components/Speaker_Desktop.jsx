@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import { FaLinkedin, FaTwitter,FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 // List of speakers with background patterns and dummy descriptions
@@ -55,7 +54,7 @@ const speakers = [
     image: "https://ik.imagekit.io/tedxvjit/public/speakers/naveen_samala.png?updatedAt=1729522774666",
     linkedin: "https://www.linkedin.com/in/naveensamala/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BT4wuo2idQOKI7rUPra%2FnIw%3D%3D ",
     twitter: "https://twitter.com/vanitha_datla",
-    description: "Naveen Samala is a remarkable individual whose journey is a powerful testament to perseverance and the relentless pursuit of dreams. Rising from a modest background, he has become a first-generation post-graduate, showcasing his ambition and dedication. Now a Global Portfolio Manager for Business Transformation, Naveen is also an Udemy instructor, author, career coach, CXO resume writer, guest faculty at BITS Pilani, and podcast visionary. His podcast, The Guiding Voice, ranked in the Global Top 2.5%, is the world’s only Quadrilingual podcast, inspiring millions. With expertise in leadership, productivity, and public speaking, his podcast recently won the Asia Podcast Award for Education, further amplifying his impact globally.",
+    description: "Naveen Samala is a remarkable individual whose journey is a powerful testament to perseverance and the relentless pursuit of dreams. Rising from a modest background, he has become a first-generation post-graduate, showcasing his ambition and dedication. Now a Global Portfolio Manager for Business Transformation, Naveen is also an Udemy instructor, author, career coach, CXO resume writer, guest faculty at BITS Pilani, and podcast visionary. His podcast, The Guiding Voice, ranked in the Global Top 2.5%, is the world's only Quadrilingual podcast, inspiring millions. With expertise in leadership, productivity, and public speaking, his podcast recently won the Asia Podcast Award for Education, further amplifying his impact globally.",
     position: "Global Portfolio Management Leader-Diebold, Founder-The Guiding Voice",
     pattern: "bg-[linear-gradient(45deg,#d40000_25%,#000_25%,#000_50%,#dc2626_50%,#d40000_75%,#000_75%,#000)]",
   },
@@ -115,7 +114,7 @@ const speakers = [
     image: "https://ik.imagekit.io/tedxvjit/public/speakers/kamal.png?updatedAt=1729522775238",
     linkedin: "https://www.linkedin.com/in/kraveentharkamal/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVu4Ve0irR2SJXUdTcw5GyQ%3D%3D",
     twitter: "https://twitter.com/vanitha_datla",
-    description: "Kraveenthar Kamal is the Founder and Director of MAKER GLOBAL, an 8-year-old bootstrapped startup that has become one of India's rapidly growing companies in 3D printing technology. He holds a degree in Mechanical Engineering from the renowned Loyola College, Chennai, and completed an exchange program at ICAM University in Toulouse, France, where he first encountered 3D printing technology. Inspired by a vision to make this technology accessible to the masses in India, he began his entrepreneurial journey at just 21 years old. Through determination and perseverance, he has grown MAKER GLOBAL into Hyderabad’s leading 3D printing company. The company’s notable clients include Tata Aerospace, Boeing, the Indian Army, and Procter & Gamble. Additionally, MAKER GLOBAL is a key provider of high-tech, intricately detailed props for the art and costumes departments of Telugu cinema through 3D printing",
+    description: "Kraveenthar Kamal is the Founder and Director of MAKER GLOBAL, an 8-year-old bootstrapped startup that has become one of India's rapidly growing companies in 3D printing technology. He holds a degree in Mechanical Engineering from the renowned Loyola College, Chennai, and completed an exchange program at ICAM University in Toulouse, France, where he first encountered 3D printing technology. Inspired by a vision to make this technology accessible to the masses in India, he began his entrepreneurial journey at just 21 years old. Through determination and perseverance, he has grown MAKER GLOBAL into Hyderabad's leading 3D printing company. The company's notable clients include Tata Aerospace, Boeing, the Indian Army, and Procter & Gamble. Additionally, MAKER GLOBAL is a key provider of high-tech, intricately detailed props for the art and costumes departments of Telugu cinema through 3D printing",
     position: "Director & Founder Maker Global",
     pattern: "bg-[linear-gradient(45deg,#d40000_25%,#000_25%,#000_50%,#dc2626_50%,#d40000_75%,#000_75%,#000)]",
   },
@@ -123,9 +122,8 @@ const speakers = [
 ];
 
 // Full-Screen Speaker Modal
-// Full-Screen Speaker Modal
 const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
-  if (!activeSpeaker) return null; // Return null if there's no active speaker
+  if (!activeSpeaker) return null;
 
   return (
     <div className="fixed inset-0 z-50">
@@ -138,7 +136,6 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
           exit={{ opacity: 0, y: 50 }}
           className="flex flex-col md:flex-row justify-between items-center w-full h-full p-8 bg-cover rounded-lg shadow-xl"
         >
-          {/* Left Side: Speaker Info */}
           <div className="w-full md:w-1/2 text-left mb-8 md:mb-0">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-red-900 to-red-600 text-transparent bg-clip-text">
               {activeSpeaker.name}
@@ -150,7 +147,6 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
               {activeSpeaker.description}
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              {/* LinkedIn */}
               {activeSpeaker.linkedin && activeSpeaker.linkedin !== 0 ? (
                 <a
                   href={activeSpeaker.linkedin}
@@ -162,7 +158,6 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
                 </a>
               ) : null}
 
-              {/* Instagram */}
               {activeSpeaker.instagram && activeSpeaker.instagram !== 0 ? (
                 <a
                   href={activeSpeaker.instagram}
@@ -173,22 +168,9 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
                   <FaInstagram size={24} />
                 </a>
               ) : null}
-
-              {/* Twitter */}
-              {/* {activeSpeaker.twitter && (
-                <a
-                  href={activeSpeaker.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-red-600 transition-colors duration-300"
-                >
-                  <FaTwitter size={24} />
-                </a>
-              )} */}
             </div>
           </div>
 
-          {/* Right Side: Speaker Image */}
           <motion.div className="relative w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 overflow-hidden rounded-full border-4 border-red-600 transition-transform duration-500 hover:scale-105">
             <img
               src={activeSpeaker.image}
@@ -199,7 +181,6 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
           </motion.div>
         </motion.div>
 
-        {/* Go Back Button */}
         <button
           className="absolute bottom-8 left-8 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
           onClick={() => setActiveSpeaker(null)}
@@ -210,10 +191,6 @@ const Speakers = ({ activeSpeaker, setActiveSpeaker }) => {
     </div>
   );
 };
-
-
-
-
 
 // SpeakerCard Component for the grid
 const SpeakerCard = ({ speaker, openFullScreen }) => {
@@ -246,17 +223,14 @@ const SpeakerCard = ({ speaker, openFullScreen }) => {
   );
 };
 
-// Main SpeakerGrid component with full-screen modal toggle
-const Speaker_Desktop = () => {
-  const [activeSpeaker, setActiveSpeaker] = useState(null);
-
-  const openFullScreen = (speaker) => {
-    setActiveSpeaker(speaker);
+// Speaker Registration Section Component
+const SpeakerRegistration = () => {
+  const handleRegisterClick = () => {
+    window.open('', '_blank');
   };
 
   return (
-    <div className="relative min-h-screen py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Background animation */}
+    <div className="min-h-screen flex items-center justify-center bg-black text-white">
       <video
         autoPlay
         loop
@@ -267,30 +241,104 @@ const Speaker_Desktop = () => {
         <source src="https://ik.imagekit.io/tedxvjit/public/speakers/waves.mp4?updatedAt=1729522784179" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-      <div className="relative z-10 max-w-7xl mx-auto mt-16">
-        <h2 className="text-white  font-bold text-6xl text-center">Speakers</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
-          {!activeSpeaker &&
-            speakers.map((speaker) => (
-              <SpeakerCard
-                key={speaker.id}
-                speaker={speaker}
-                openFullScreen={openFullScreen}
-              />
-            ))}
-        </div>
+      
+      <div className="text-center z-10">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-red-600 to-red-400 text-transparent bg-clip-text"
+        >
+          Register as a New Speaker
+        </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-lg md:text-xl lg:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto px-4"
+        >
+          Share your ideas worth spreading. Join our inspiring lineup of speakers and make your mark at TEDx VJIT.
+        </motion.p>
+        
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleRegisterClick}
+          className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 text-lg md:text-xl rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          Register Now
+        </motion.button>
       </div>
+    </div>
+  );
+};
 
-      {/* Full-Screen Modal */}
-      <AnimatePresence>
-        {activeSpeaker && (
-          <Speakers
-            activeSpeaker={activeSpeaker}
-            setActiveSpeaker={setActiveSpeaker}
-          />
-        )}
-      </AnimatePresence>
+// Main SpeakerGrid component with full-screen modal toggle
+const Speaker_Desktop = () => {
+  const [activeSpeaker, setActiveSpeaker] = useState(null);
+
+  const openFullScreen = (speaker) => {
+    setActiveSpeaker(speaker);
+  };
+
+  return (
+    <div className="relative overflow-hidden">
+      {/* Speaker Registration Section */}
+      <SpeakerRegistration />
+      
+      {/* Existing Speakers Section */}
+      <div className="relative min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed top-0 left-0 w-full h-auto object-cover z-[-1]"
+        >
+          <source src="https://ik.imagekit.io/tedxvjit/public/speakers/waves.mp4?updatedAt=1729522784179" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative z-10 max-w-7xl mx-auto mt-16">
+          <motion.h2
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-white font-bold text-6xl text-center mb-12"
+          >
+            Our Distinguished Speakers
+          </motion.h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+            {!activeSpeaker &&
+              speakers.map((speaker, index) => (
+                <motion.div
+                  key={speaker.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <SpeakerCard
+                    speaker={speaker}
+                    openFullScreen={openFullScreen}
+                  />
+                </motion.div>
+              ))}
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {activeSpeaker && (
+            <Speakers
+              activeSpeaker={activeSpeaker}
+              setActiveSpeaker={setActiveSpeaker}
+            />
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
