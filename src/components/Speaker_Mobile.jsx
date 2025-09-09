@@ -172,7 +172,7 @@ const SpeakerRegistration = () => {
   };
 
   return (
-    <div className="h-screen w-full flex items-center justify-center sticky top-0 bg-black">
+  <div className="h-screen w-full flex items-center justify-center bg-black">
       <div className="text-center z-10 px-4">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
