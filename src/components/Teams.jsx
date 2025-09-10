@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 // import './teams.css'
 
+const Secretary=[
+{name:"Dr. P. Rajeshwar Reddy",designation:"Secretary and Correspondent",img:"https://vjit.edu.in/wp-content/uploads/2020/01/drprr.jpg"}
+];
+
 const coreTeam = [
-  { name: "Dr.E Saibaba Reddy", designation: "Principal", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/saibaba.jpg?updatedAt=1729522758652" },
+  { name: "Dr. A Srujana", designation: "Principal", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srujana.jpg?updatedAt=1729522759124" },
   { name: "Dr. A Padmaja", designation: "Dean", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/WhatsApp%20Image%202024-10-21%20at%2017.24.34_ff68359b.jpg?updatedAt=1729534845207" },
   { name: "Mrs. G Srilatha", designation: "Academic Coordinator", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srilatha.jpg?updatedAt=1729522759229" },
-  { name: "Mr. R V Chalam", designation: "Sr Adminstrative Officer", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/chalam.jpg?updatedAt=1729522756976" },
+  { name: "Mr. R V Chalam", designation: "Sr. Adminstrative Officer", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/chalam.jpg?updatedAt=1729522756976" },
   { name: "Dr. G Sreeram Reddy", designation: "HOD-ME", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/sreeramreddy.jpg?updatedAt=1729522759243" },
-  { name: "Dr. A Srujana", designation: "HOD-EEE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srujana.jpg?updatedAt=1729522759124" },
-  { name: "Mr. B Srinivasulu", designation: "HOD-IT", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/srinivas.jpg?updatedAt=1729522758877" },
-  { name: "Dr.M Rajendra Prasad", designation: "HOD-ECE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/rajendraprasad.jpg?updatedAt=1729522758544" },
-  { name: "Dr. Pallavi Badry", designation: "HOD-CE", img: "https://ik.imagekit.io/tedxvjit/public/teams/core/pallavibadry.jpg?updatedAt=1729522757322" },
+  { name: "Dr. C. N. Ravi", designation: "HOD-EEE", img: "https://vjit.edu.in/wp-content/uploads/2025/04/c.n.raju_.jpg" },
+  { name: "Dr. A. Obulesu", designation: "HOD-IT", img: "https://vjit.edu.in/wp-content/uploads/2023/06/VJIT-AI-HoD.jpg" },
+  { name: "Dr. P. Nageswara Rao", designation: "HOD-ECE", img: "https://vjit.edu.in/wp-content/uploads/2025/06/dr.-p.-nageswara-rao.jpg" },
+  { name: "Dr. N. Sudharsan", designation: "HOD-CE", img: "https://vjit.edu.in/wp-content/uploads/2025/08/civil-dept.-hod.jpg" },
 ];
 
 const organizingTeam = [
@@ -217,7 +221,14 @@ const Teams = () => {
         <div className="tedx-teams">
           <h2 className="text-4xl mt-[7rem] font-bold mb-8 text-center">Core Team</h2>
         </div>
+
         <section id="core-team-section" className={`min-h-screen px-10 py-16 ${fadeInSections.coreTeam ? 'fade-in' : 'scroll-fade'}`}>
+
+          <div className="  justify-items-center items-center mb-20">
+            {Secretary.map((member, index) => (
+              <Card key={index} {...member} />
+            ))}
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 mx-auto max-w-screen-lg justify-items-center items-center">
             {coreTeam.map((member, index) => (
@@ -270,6 +281,7 @@ const Teams = () => {
           <h2 className="text-4xl font-bold mb-8 text-center">Design Team</h2>
         </div>
         <section id="design-team-section" className={`min-h-screen px-4 py-16 ${fadeInSections.designTeam ? 'fade-in' : 'scroll-fade'}`}>
+          
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-24 mx-auto max-w-screen-lg justify-items-center items-center">
             {designTeam.map((member, index) => (
