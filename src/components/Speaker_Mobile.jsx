@@ -168,7 +168,7 @@ const speakers = [
 // Speaker Registration Section Component
 const SpeakerRegistration = () => {
   const handleRegisterClick = () => {
-    window.open('https://forms.google.com/speaker-registration', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSd_XTYzOb5QbG7ZmtZWCrAPeyCR-mJQflKzSdgs0x5SGonWJw/viewform', '_blank');
   };
 
   return (

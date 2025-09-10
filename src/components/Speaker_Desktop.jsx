@@ -226,7 +226,7 @@ const SpeakerCard = ({ speaker, openFullScreen }) => {
 // Speaker Registration Section Component
 const SpeakerRegistration = () => {
   const handleRegisterClick = () => {
-    window.open('', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSd_XTYzOb5QbG7ZmtZWCrAPeyCR-mJQflKzSdgs0x5SGonWJw/viewform', '_blank');
   };
 
   return (
